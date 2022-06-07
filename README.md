@@ -1,5 +1,5 @@
 # web-tech-frontend
-
+this is the front end part of the todo web app 
 ## Project setup
 ```
 npm install
