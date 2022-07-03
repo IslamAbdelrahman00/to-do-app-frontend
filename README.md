@@ -1,3 +1,4 @@
+[![CI](https://github.com/IslamAbdelrahman00/to-do-app-frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/IslamAbdelrahman00/to-do-app-frontend/actions/workflows/ci.yml)
 # web-tech-frontend
 this is the front end part of the todo web app 
 ## Project setup
