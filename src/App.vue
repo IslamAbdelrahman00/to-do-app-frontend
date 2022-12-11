@@ -1,17 +1,17 @@
 <template>
-  <navbar>
-
-  </navbar>
-  <router-view/>
+  <div id="app">
+    <testsp />
+  </div>
 </template>
-<script >
-import Navbar from '@/components/Navbar'
+<script>
 
+import testsp from './components/testsp'
 export default {
   name: 'App',
-  components: { Navbar }
+  components: { testsp }
 }
 </script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -21,16 +21,16 @@ export default {
   color: #2c3e50;
 }
 
-nav {
+#nav {
   padding: 30px;
 }
 
-nav a {
+#nav a {
   font-weight: bold;
   color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
+#nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
