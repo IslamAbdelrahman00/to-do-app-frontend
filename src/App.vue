@@ -1,24 +1,28 @@
 <template>
   <div id="app">
-    <testsp />
+    <FetchLists />
+    <createList />
   </div>
 </template>
 <script>
-
-import testsp from './components/testsp'
+import createList from './components/createList'
+import FetchLists from './components/FetchLists'
 export default {
   name: 'App',
-  components: { testsp }
+  components: { FetchLists, createList }
 }
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #f0f0f0;
+
 }
 
 #nav {
