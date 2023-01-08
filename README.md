@@ -25,6 +25,11 @@ npm run test:unit
 ```
 npm run lint
 ```
+### run the app 
+
+```
+http://localhost:3000
+```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
