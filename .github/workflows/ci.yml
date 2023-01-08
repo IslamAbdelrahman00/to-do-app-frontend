@@ -15,5 +15,8 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm run test:unit
-      - name: Cypress run
-        uses: cypress-io/github-action@v5
+  test:
+    # use the reusable workflow to check out the code, install dependencies
+    # and run the Cypress tests
+    # https://github.com/bahmutov/cypress-workflows
+    uses: bahmutov/cypress-workflows/.github/workflows/standard.yml@v1
