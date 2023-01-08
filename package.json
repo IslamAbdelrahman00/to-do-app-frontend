@@ -10,7 +10,9 @@
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "cypress:open": "CYPRESS_BASE_URL=http://localhost:3000 cypress open ",
+    "cypress:run": "CYPRESS_BASE_URL=http://localhost:3000 cypress run"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.0",
@@ -20,8 +22,10 @@
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.8.3",
     "core-js": "^3.8.3",
+    "cypress-xpath": "^2.0.1",
     "element-plus": "^2.2.8",
     "element-ui": "^2.15.9",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-n": "^15.2.3",
     "jquery": "^3.6.0",
     "sweetalert2": "^11.4.8",
@@ -42,6 +46,7 @@
     "@vue/test-utils": "^2.0.0-0",
     "@vue/vue3-jest": "^27.0.0-alpha.1",
     "babel-jest": "^27.0.6",
+    "cypress": "^12.3.0",
     "eslint": "^8.19.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
