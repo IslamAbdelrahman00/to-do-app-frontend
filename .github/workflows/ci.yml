@@ -15,7 +15,7 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm run test:unit
-    - name: cypress testing
+      - name: cypress testing
         uses: bahmutov/cypress-workflows/.github/workflows/standard.yml@v1
         with:
           start: 'npm start'
