@@ -15,20 +15,9 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm run test:unit
-  test:
-    # use the reusable workflow to check out the code, install dependencies
-    # and run the Cypress tests
-    # https://github.com/bahmutov/cypress-workflows
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use node 16.11
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16.11.0
-      - name: Install dependencies
-        run: npm ci
-      - uses: bahmutov/cypress-workflows/.github/workflows/standard.yml@v1
+    - name: cypress testing
+        uses: bahmutov/cypress-workflows/.github/workflows/standard.yml@v1
         with:
           start: 'npm start'
           wait-on: 'http://localhost:3000'
+
