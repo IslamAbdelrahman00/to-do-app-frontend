@@ -16,11 +16,6 @@ npm run serve
 npm run build
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
-
 ### Lints and fixes files
 ```
 npm run lint
@@ -29,6 +24,11 @@ npm run lint
 
 ```
 http://localhost:3000
+```
+
+### Run your cypress tests
+```
+npm cypress run
 ```
 
 ### Customize configuration
