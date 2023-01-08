@@ -18,4 +18,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          spec: cypress/ewe/tests.cy.js
+          spec: cypress/e2e/tests.cy.js
