@@ -16,7 +16,6 @@ jobs:
       - name: Run tests
         run: npm run test:unit
       - name: Cypress run
-          uses: cypress-io/github-action@v5
-          with:
-            spec: cypress/ewe/tests.cy.js
-
+        uses: cypress-io/github-action@v5
+        with:
+          spec: cypress/ewe/tests.cy.js
